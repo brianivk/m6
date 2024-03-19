@@ -11,55 +11,34 @@ var padding = { top: 20, right: 40, bottom: 0, left: 0 },
 //randomNumbers = getRandomNumbers();
 //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
 var data = [
-    { "label": "1", "value": 1, "question": "The next drawn number is: 1" },
-    { "label": "2", "value": 2, "question": "The next drawn number is: 2" },
-    { "label": "3", "value": 3, "question": "The next drawn number is: 3" },
-    { "label": "4", "value": 4, "question": "The next drawn number is: 4" },
-    { "label": "5", "value": 5, "question": "The next drawn number is: 5" },
-    { "label": "6", "value": 6, "question": "The next drawn number is: 6" },
-    { "label": "7", "value": 7, "question": "The next drawn number is: 7" },
-    { "label": "8", "value": 8, "question": "The next drawn number is: 8" },
-    { "label": "9", "value": 9, "question": "The next drawn number is: 9" },
-    { "label": "10", "value": 10, "question": "The next drawn number is: 10" },
-    { "label": "11", "value": 11, "question": "The next drawn number is: 11" },
-    { "label": "12", "value": 12, "question": "The next drawn number is: 12" },
-    { "label": "13", "value": 13, "question": "The next drawn number is: 13" },
-    { "label": "14", "value": 14, "question": "The next drawn number is: 14" },
-    { "label": "15", "value": 15, "question": "The next drawn number is: 15" },
-    { "label": "16", "value": 16, "question": "The next drawn number is: 16" },
-    { "label": "17", "value": 17, "question": "The next drawn number is: 17" },
-    { "label": "18", "value": 18, "question": "The next drawn number is: 18" },
-    { "label": "19", "value": 19, "question": "The next drawn number is: 19" },
-    { "label": "20", "value": 20, "question": "The next drawn number is: 20" },
-    { "label": "21", "value": 21, "question": "The next drawn number is: 21" },
-    { "label": "22", "value": 22, "question": "The next drawn number is: 22" },
-    { "label": "23", "value": 23, "question": "The next drawn number is: 23" },
-    { "label": "24", "value": 24, "question": "The next drawn number is: 24" },
-    { "label": "25", "value": 25, "question": "The next drawn number is: 25" },
-    { "label": "26", "value": 26, "question": "The next drawn number is: 26" },
-    { "label": "27", "value": 27, "question": "The next drawn number is: 27" },
-    { "label": "28", "value": 28, "question": "The next drawn number is: 28" },
-    { "label": "29", "value": 29, "question": "The next drawn number is: 29" },
-    { "label": "30", "value": 30, "question": "The next drawn number is: 30" },
-    { "label": "31", "value": 31, "question": "The next drawn number is: 31" },
-    { "label": "32", "value": 32, "question": "The next drawn number is: 32" },
-    { "label": "33", "value": 33, "question": "The next drawn number is: 33" },
-    { "label": "34", "value": 34, "question": "The next drawn number is: 34" },
-    { "label": "35", "value": 35, "question": "The next drawn number is: 35" },
-    { "label": "36", "value": 36, "question": "The next drawn number is: 36" },
-    { "label": "37", "value": 37, "question": "The next drawn number is: 37" },
-    { "label": "38", "value": 38, "question": "The next drawn number is: 38" },
-    { "label": "39", "value": 39, "question": "The next drawn number is: 39" },
-    { "label": "40", "value": 40, "question": "The next drawn number is: 40" },
-    { "label": "41", "value": 41, "question": "The next drawn number is: 41" },
-    { "label": "42", "value": 42, "question": "The next drawn number is: 42" },
-    { "label": "43", "value": 43, "question": "The next drawn number is: 43" },
-    { "label": "44", "value": 44, "question": "The next drawn number is: 44" },
-    { "label": "45", "value": 45, "question": "The next drawn number is: 45" },
-    { "label": "46", "value": 46, "question": "The next drawn number is: 46" },
-    { "label": "47", "value": 47, "question": "The next drawn number is: 47" },
-    { "label": "48", "value": 48, "question": "The next drawn number is: 48" },
-    { "label": "49", "value": 49, "question": "The next drawn number is: 49" },
+    { "label": "5, 9, 12, 28, 36, 43", "value": "5, 9, 12, 28, 36, 43", "question": "The drawn entry is: 5, 9, 12, 28, 36, 43" },
+    { "label": "3, 13, 11, 18, 41, 49", "value": "3, 13, 11, 18, 41, 49", "question": "The drawn entry is: 3, 13, 11, 18, 41, 49" },
+    { "label": "7, 9, 17, 22, 33, 36", "value": "7, 9, 17, 22, 33, 36", "question": "The drawn entry is: 7, 9, 17, 22, 33, 36" },
+    { "label": "9, 17, 22, 47, 48, 49", "value": "9, 17, 22, 47, 48, 49", "question": "The drawn entry is: 9, 17, 22, 47, 48, 49" },
+    { "label": "2, 4, 13, 23, 33, 47", "value": "2, 4, 13, 23, 33, 47", "question": "The drawn entry is: 2, 4, 13, 23, 33, 47" },
+    { "label": "10, 18, 24, 25, 33, 37", "value": "10, 18, 24, 25, 33, 37", "question": "The drawn entry is: 10, 18, 24, 25, 33, 37" },
+    { "label": "5, 11, 23, 31, 42, 49", "value": "5, 11, 23, 31, 42, 49", "question": "The drawn entry is: 5, 11, 23, 31, 42, 49" },
+    { "label": "14, 22, 29, 37, 41, 48", "value": "14, 22, 29, 37, 41, 48", "question": "The drawn entry is: 14, 22, 29, 37, 41, 48" },
+    { "label": "3, 6, 9, 21, 36, 41", "value": "3, 6, 9, 21, 36, 41", "question": "The drawn entry is: 3, 6, 9, 21, 36, 41" },
+    { "label": "2, 4, 9, 12, 25, 30", "value": "2, 4, 9, 12, 25, 30", "question": "The drawn entry is: 2, 4, 9, 12, 25, 30" },
+    { "label": "9, 11, 17, 25, 28, 40", "value": "9, 11, 17, 25, 28, 40", "question": "The drawn entry is: 9, 11, 17, 25, 28, 40" },
+    { "label": "1, 9, 13, 16, 23, 44", "value": "1, 9, 13, 16, 23, 44", "question": "The drawn entry is: 1, 9, 13, 16, 23, 44" },
+    { "label": "9, 34, 35, 36, 38, 46", "value": "9, 34, 35, 36, 38, 46", "question": "The drawn entry is: 9, 34, 35, 36, 38, 46" },
+    { "label": "7, 12, 20, 29, 38, 44", "value": "7, 12, 20, 29, 38, 44", "question": "The drawn entry is: 7, 12, 20, 29, 38, 44" },
+    { "label": "5, 22, 28, 36, 47, 49", "value": "5, 22, 28, 36, 47, 49", "question": "The drawn entry is: 5, 22, 28, 36, 47, 49" },
+    { "label": "3, 8, 10, 11, 17, 30", "value": "3, 8, 10, 11, 17, 30", "question": "The drawn entry is: 3, 8, 10, 11, 17, 30" },
+    { "label": "2, 3, 6, 18, 23, 42", "value": "2, 3, 6, 18, 23, 42", "question": "The drawn entry is: 2, 3, 6, 18, 23, 42" },
+    { "label": "6, 10, 12, 20, 21, 36", "value": "6, 10, 12, 20, 21, 36", "question": "The drawn entry is: 6, 10, 12, 20, 21, 36" },
+    { "label": "10, 11, 22, 37, 41, 47", "value": "10, 11, 22, 37, 41, 47", "question": "The drawn entry is: 10, 11, 22, 37, 41, 47" },
+    { "label": "9, 13, 17, 25, 36, 49", "value": "9, 13, 17, 25, 36, 49", "question": "The drawn entry is: 9, 13, 17, 25, 36, 49" },
+    { "label": "1, 4, 15, 22, 27, 34", "value": "1, 4, 15, 22, 27, 34", "question": "The drawn entry is: 1, 4, 15, 22, 27, 34" },
+    { "label": "2, 13, 20, 27, 37, 49", "value": "2, 13, 20, 27, 37, 49", "question": "The drawn entry is: 2, 13, 20, 27, 37, 49" },
+    { "label": "3, 8, 19, 32, 44, 49", "value": "3, 8, 19, 32, 44, 49", "question": "The drawn entry is: 3, 8, 19, 32, 44, 49" },
+    { "label": "1, 6, 11, 18, 28, 36", "value": "1, 6, 11, 18, 28, 36", "question": "The drawn entry is: 1, 6, 11, 18, 28, 36" },
+    { "label": "5, 12, 17, 29, 46, 47", "value": "5, 12, 17, 29, 46, 47", "question": "The drawn entry is: 5, 12, 17, 29, 46, 47" },
+    { "label": "12, 15, 16, 28, 30, 38", "value": "12, 15, 16, 28, 30, 38", "question": "The drawn entry is: 12, 15, 16, 28, 30, 38" },
+    { "label": "5, 12, 18, 24, 31, 48", "value": "5, 12, 18, 24, 31, 48", "question": "The drawn entry is: 5, 12, 18, 24, 31, 48" },
+    { "label": "9, 18, 20, 25, 32, 41", "value": "9, 18, 20, 25, 32, 41", "question": "The drawn entry is: 9, 18, 20, 25, 32, 41" },
 ];
 var svg = d3.select('#chart')
     .append("svg")
@@ -140,11 +119,12 @@ function spin(d) {
             /* Insert into my drawn numbers */
             drawnNumber.push(data[picked].value)
             //drawnNumber.sort(); // this might lead to error due to string comparison!!! Try below:
-            drawnNumber.sort((a, b) => a - b);
-            console.log("Your drawn numbers are: "+drawnNumber)
+            // drawnNumber.sort((a, b) => a - b);
+            console.log("Your drawn entries are:\n"+drawnNumber.join('\r\n'));
             /* Output the drawn numbers */
             d3.select("#question h2")
-                .text(drawnNumber);
+                .html(drawnNumber.join('<br>'));
+                // .text(drawnNumber.join('&lt;br&gt;'));
 
             /* Comment the below line for restrict spin to sngle time */
             container.on("click", spin);
