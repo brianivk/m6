@@ -102,7 +102,7 @@ function spin(d) {
     container.on("click", null);
     //all slices have been seen, all done
     console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
-    if ((oldpick.length == data.length) || (oldpick.length == 6)) {
+    if ((oldpick.length == data.length) || (oldpick.length == 10)) {
         console.log("done");
         container.on("click", null);
         alert("Completed on this entry. Good luck!")
